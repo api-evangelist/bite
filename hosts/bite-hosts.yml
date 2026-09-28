@@ -1,0 +1,58 @@
+generated: '2026-09-28'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 3
+  own: 3
+  other_domain: 0
+  platform: 0
+  roles:
+  - api
+  - portal
+  - website
+hosts:
+- host: api.bitedata.io
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: bitedata.io
+  role: api
+  relation: own
+- host: app.bitedata.io
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - DeveloperPortal
+  serves:
+  - docs
+  registrable_domain: bitedata.io
+  role: portal
+  relation: own
+- host: bitedata.io
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Documentation
+  - Blog
+  - Support
+  - Pricing
+  - TermsOfService
+  - PrivacyPolicy
+  serves:
+  - docs
+  registrable_domain: bitedata.io
+  role: website
+  relation: own

@@ -1,0 +1,29 @@
+generated: '2026-09-28'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://bitedata.io/pricing
+sources:
+- https://bitedata.io/pricing
+name: Bite pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Standard
+  price_text: $5 / user / month
+  price: 5
+  billing_period: month
+  description: Standard plan with unlimited tariff checker access
+- name: Pro
+  price_text: From $64 / user / month
+  price: 64
+  billing_period: month
+  description: Pro plan with advanced trade compliance tools and analyzer credits
+- name: Business
+  price_text: From $99 / user / month
+  price: 99
+  billing_period: month
+  description: Business plan with AI compliance workflows and enterprise dashboards
+- name: Enterprise
+  price_text: Contact sales
+  description: Enterprise plan with custom pricing, integrations, and dedicated support
+docs: https://bitedata.io/pricing

@@ -1,23 +1,95 @@
 aid: bite
+
 name: Bite
-description: 'Bite is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://bitedata.io/og-default.jpg
+
+description: Bite provides AI‑native trade compliance and HTS classification software that automates tariff lookups, screening, and post‑entry
+  audits. It integrates with ERP, EDI, and supplier systems to monitor, analyze, and manage risk across the global trade lifecycle, offering scalable
+  plans from single checks to enterprise workflows.
+
 url: https://raw.githubusercontent.com/api-evangelist/bite/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
-- Company
-apis: []
+- Trade
+- Compliance
+- AI
+- SaaS
+- HTS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/bite-plans-pricing.yml
+- type: ChangeLog
+  url: changelog/bite-changelog.yml
+- type: LLMsTxt
+  url: llms/bite-llms.txt
+- type: Hosts
+  url: hosts/bite-hosts.yml
+- type: Vendors
+  url: vendors/bite-vendors.yml
+- type: Newsroom
+  url: https://bitedata.io/press
+- type: ChangeLog
+  url: https://bitedata.io/changelog
+- type: GettingStarted
+  url: https://bitedata.io/wiki/getting-started
+- type: DomainSecurity
+  url: security/bite-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://bitedata.io/
+- type: Documentation
+  url: https://bitedata.io/resources
+- type: Blog
+  url: https://bitedata.io/blog
+- type: Support
+  url: https://bitedata.io/contact
+- type: Pricing
+  url: https://bitedata.io/pricing
+- type: TermsOfService
+  url: https://bitedata.io/terms
+- type: PrivacyPolicy
+  url: https://bitedata.io/privacy
+- type: DeveloperPortal
+  url: https://app.bitedata.io
+
+apis:
+- name: Bite API
+  description: Bite provides AI‑native trade compliance APIs as described on their developer portal.
+  humanURL: https://app.bitedata.io
+  baseURL: null
+  aid: bite:bite-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Developer portal requires login via Keycloak, returning only an HTML login page.
+  evidence:
+  - url: https://app.bitedata.io/openapi.json
+    status: 200
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,26 @@
+generated: '2026-09-28'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://bitedata.io/changelog
+sources:
+- https://bitedata.io/changelog
+entries:
+- breaking: false
+  highlights:
+  - 'New: AES Analyzer Upload an AES/EEI export file (CSV or Excel) and BITE audits every commodity line in it.'
+  - 'Checks cover: classification licensing destination and sanctions filing timeliness part numbers filed under more than one ECCN agency (PGA)
+    requirements restricted-party screening of the ultimate consignee.'
+  - 'Works with your file as it is: BITE finds the right sheet and header row and skips notes and blank rows.'
+  - Download the findings as a CSV that includes your original file's columns.
+  date: '2026-09-28'
+- breaking: false
+  highlights:
+  - 'Tariffs & Classification Improved: Section 301 classification now includes codes 9903.05.01–9903.05.09, so entry lines carrying them flow
+    into Section 301 columns, totals, filters, and exports.'
+  - Analyses run before this release reflect the earlier mapping — re-run them to pick up the update.
+  - 'Entity Screening & Due Diligence Changed: Beneficial ownership findings are now evidence-only.'
+  - 'Public API New: Screening results delivered by webhook, plus new read endpoints to fetch a result on demand — no more polling.'
+  date: '2026-08-19'
+current_version: 3.4.10
+note: Versioning scheme follows semantic versioning (major.minor.patch).
+docs: https://bitedata.io/changelog
